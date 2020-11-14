@@ -1,0 +1,293 @@
+.main-menu,
+.submenu
+{
+    font-weight: 600;
+    list-style-type: none;
+    border-radius:10px;   
+
+}
+
+
+.fa-redhat
+{
+    position: absolute;
+    left:15px;
+    top:18px;
+    font-size: 40px;
+    color:#fff;
+
+}
+
+.logo
+{
+    font-size: 20px;
+    padding-top: 11px;
+}
+
+.main-item
+{
+    padding:15px;
+}
+
+.main-item a:hover,
+.main-item a:hover::after
+
+{
+    color:#ee8c33;
+}
+
+/* Mobile */
+.main-menu
+{
+    display:flex;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-menu li a
+{
+    display:block;
+}
+
+.main-menu li .subitem a
+{
+    padding: 15px 5px 15px 5px;
+}
+
+.toggle 
+{
+    order:1;
+    padding-top: 7px;
+    padding: 20px;
+}
+  
+
+
+.main-item
+
+{
+    order:3;
+    width:100%;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+
+.active .main-item
+{
+    display: block;
+}
+
+.submenu
+{
+    display:none;
+    width:168px;
+}
+
+.submenu-active .submenu
+{
+    display:block;
+    padding-top: 12px;
+    border: 2px solid #ee8c33;
+}
+
+
+.has-submenu > a::after
+{
+    font-family: "Font Awesome 5 Free";
+
+    line-height: 12px;
+    font-weight: 900;
+    content:"\f078";
+    color:#fff;
+    padding-left: 5px;
+}
+
+
+.submenu-active
+{
+    background-color:#ee8c33;
+    border-radius:3px; 
+
+}
+
+.submenu-active a:hover
+{
+    color:#fff;
+}
+.submenu-active a:hover::after
+{
+    color:#fff;
+
+}
+
+.submenu-active > .submenu a:hover
+{
+    color:#ee8c33!important;
+}
+
+.stickymenu
+{
+    position: sticky;
+    top:0;
+    bottom: 0;
+    z-index: 100;
+}
+
+@media all and (min-width: 0px) and (max-width:1000px) 
+{
+    .main-item::after
+    {
+        border: none!important;
+    }
+
+    .menunav
+    {    
+        padding: 0;
+        padding-top:5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .has-submenu > a::after
+    {
+       
+        padding-left: 20px;        
+
+    }
+
+    .active
+    {
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+    .main-item
+    {
+        padding:10px;
+        
+    }
+
+
+    .subitem:first-child
+    {
+     padding-top:10px;
+          
+    }
+
+    .logo
+    {
+        display: none;
+    }
+    .toggle
+    {
+        padding: 0;
+        font-size: 70px!important;
+    }
+    .logo2
+    {
+        display: none;
+    }
+
+    .main-menu
+    {
+      
+        display: flex;
+        align-items: center;
+    }
+    .submenu
+    {
+        display:none;
+        width:100%;
+    }
+
+    .menu
+    {
+        font-size: 40px!important;
+        
+    }
+
+    .submenu-active > .submenu a:hover
+    {
+        color:#111!important;
+
+    }
+
+
+}
+
+/* Desktop menu */
+@media all and (min-width: 1001px) 
+{
+
+    .main-menu 
+    {
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        background: none;
+
+    }
+
+
+
+    .main-item 
+    {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+
+
+    }
+
+    .submenu-active .submenu 
+    {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 64px;
+        background: #121315;
+    }
+
+    .toggle 
+    {
+
+        display: none;
+    }
+
+    .submenu-active 
+    {
+        border-radius: 0;
+
+    }
+    
+    .submenu-active > .submenu a:hover
+    {
+        color:#111;
+
+
+    }
+
+
+}
+
+
+@media all and (min-width: 1400px) 
+{
+    .logo:nth-child(2)
+    {
+        order: 0;
+        padding-right: 22%;
+
+    }
+
+
+}
+
+

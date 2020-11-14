@@ -1,0 +1,23 @@
+.toggle
+{
+    display: none;
+}
+.main-item
+{
+    display: block;
+
+}
+
+.submenu
+{
+    display: block;
+}
+.subitem
+{
+    display: block;
+
+}
+.subitem:first-of-type{
+    padding-top:10px;
+}
+

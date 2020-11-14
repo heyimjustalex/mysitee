@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8"/>
+        <title>Cybersecurtiy</title>
+        <meta name="description" content="All about cybersecurity, devices, and cybersec career"/>
+        <meta name="keywords" content="cybersecurity, cybersec, blog"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/> 
+        <link rel="stylesheet" href="css/menu.css" type="text/css"/> 
+        <link rel="stylesheet" href="css/icons_nav.css" type="text/css"/> 
+        <link rel="stylesheet" href="css/newsletter.css" type="text/css"/> 
+        <link rel="stylesheet" href="css/jquery-ui.css" type="text/css"/> 
+        
+        <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,900&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/6777f73f99.js" crossorigin="anonymous"></script>
+        <script src="scripts/animation.js"></script>
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/form_validation.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+        
+        <script src="scripts/nostickymenu4mobile.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+            <link rel="stylesheet" href="css/noscript.css" type="text/css"/> 
+        </noscript>
+    </head> 
+
+    <body> 
+        <div id="container">
+
+            <div class="menu">
+                <nav class="menunav">
+
+                    <ul class="main-menu">
+                        <li class="logo2">
+
+                            <i class="fab fa-redhat"></i>
+
+                        </li>
+
+                        <li class="logo">
+
+                            <a href="index.html"> cyberSecurity.com</a>
+
+                        </li>
+
+                        <li class="main-item" >
+
+                            <a href="index.html">Home</a>
+
+                        </li>
+
+                        <li class="main-item">
+
+                            <a href="cyber_devices.html" tabindex="0">Cyber Devices</a>
+
+                        </li>
+
+                        <li class="main-item has-submenu">
+
+                            <a tabindex="0">Career Paths</a>
+
+                            <ul class="submenu">
+
+                                <li class="subitem">
+
+                                    <a href="osint_expert.html"> OSINT Expert </a>
+
+                                </li>
+
+                                <li class="subitem">
+
+                                    <a href="network_pentester.html"> Network Pentester </a>
+
+                                </li>
+
+                                <li class="subitem">
+
+                                    <a href="app_pentester.html"> Application Pentester </a>
+
+                                </li>
+                            </ul>
+
+                        </li>
+
+
+                        <li class="main-item has-submenu">
+
+                            <a tabindex="0">Further info</a>
+                            <ul class="submenu" >
+
+                                <li class="subitem">
+
+                                    <a id="aboutme-submenu" href="index.html">About Me</a>
+
+                                </li>
+
+                                <li class="subitem">
+
+                                    <a href="newsletter.html" tabindex="0">Newsletter</a>
+
+                                </li>
+
+                                <li class="subitem">
+
+                                    <a href="gallery.html" tabindex="0">Gallery</a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="toggle">
+
+                            <a href="#"> <i class="fas fa-bars"></i> </a>   
+
+                        </li>
+
+                    </ul>
+
+                </nav>
+            </div>
+
+            <main class="container-main"> 
+                <div>
+                    <section class="newsletter-section">
+
+                        <h2 class="header-aboutme">Sign up for a newsletter</h2> 
+
+
+                        <div class="newsletter-form">
+                            <form name="newsletter-form" action="form.php" method="post" onsubmit="return validateForm()">
+                                <label >Name/Nickname:</label> <input type="text" class="form-name" id="name" title="How you want us to name you in mail"> <br/> <br/>
+
+                                <label for="email">E-mail: </label> <input type="email" id="email" ><br/> <br/>
+
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label><br/><br/>
+
+                                <input type="checkbox" name="subscription" id="osint">
+                                <label for="osint">Osint newsletter</label> <br/> <br/>
+                                <input type="checkbox" name="subscription" id="network-pen">
+                                <label for="network-pen">Network pentester newsletter</label> <br/> <br/>
+                                <input type="checkbox" name="subscription" id="app-pen">
+                                <label for="app-pen">Application pentester newsletter</label> <br/> <br/>
+
+                                <label for="news-week">Starting week:</label> 
+                                <input type="week" id="news-week"> <br/> <br/> 
+                                <label for="phone">Phone number:</label>
+                                <input type="tel"  title="Enter if want to enable phone notifications" id="phone" name="phone" placeholder="123456789"  pattern="[0-9]{3}[0-9]{3}[0-9]{3}"> <br/><br/>
+
+                                <label for="which-day-list">Day of the week:</label> 
+                                <input id="which-day-list" list="which-day" placeholder="Sunday" onblur="this.placeholder='Sunday'">
+                                <datalist id="which-day">
+                                    <option value="Monday">
+                                    <option value="Tuesday">
+                                    <option value="Wednesday">
+                                    <option value="Thursday">
+                                    <option value="Friday">
+                                    <option value="Saturday">
+                                    <option value="Sunday">
+                                </datalist>
+                                <br/> <br/> 
+                                <input type="submit" value="Submit">
+
+                                <input type="reset" value = "Reset">
+                            </form>
+
+                        </div>
+
+                        <div id="dialog" title="Alert Form Box"></div>
+
+                    </section>
+
+
+                    <nav>
+                        <div class="container-icons">
+                            <a href="#"><div class="icons icon1"><i class="fab fa-twitter"></i></div></a>
+                            <a href="#"><div class="icons icon2"><i class="fab fa-facebook-f"></i></div></a>
+                            <a href="#"><div class="icons icon3"><i class="fab fa-instagram"></i></div></a>
+                            <a href="#"><div class="icons icon4"><i class="fab fa-linkedin-in"></i></div></a>
+
+                        </div>
+                    </nav>
+                </div>    
+            </main>
+        </div>
+
+        <footer>                
+
+            <div id="circles-bottom-svg">
+                <div id="inner-logo">
+                    <svg height="100" width="100">
+                        <circle cx="50" cy="50" r="10" stroke="#ee8c33" stroke-width="3" fill="#ee8c33" />
+                    </svg>
+                    <svg height="100" width="100">
+                        <circle cx="50" cy="50" r="10" stroke="#ee8c33" stroke-width="3" fill="#ee8c33" />
+                    </svg><svg height="100" width="100">
+                    <circle cx="50" cy="50" r="10" stroke="#ee8c33" stroke-width="3" fill="#ee8c33" />
+                    </svg>
+                </div>
+
+            </div>
+            <div class="footer-main">
+                <a>Fonts by Google and FontsAwesome</a> | <a href="src.txt">Photos and articles SRC</a>
+            </div>
+        </footer>
+    </body>
+    
+    
+  
+</html>
